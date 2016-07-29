@@ -1,0 +1,186 @@
+@CHARSET "ISO-8859-1";
+
+/* Configurações do cabecalho.jsp */
+
+/* Classes do Bootstrap */
+div.container {
+	width: 100%;
+}
+
+div.jumbotron {
+	background: #0085C3;
+	color: #fff;
+}
+
+@media ( min-width : 500px) {
+	div#subtitulo h3 {
+		text-align: center; //
+		background: #64b74d; //
+		color: #fff;
+		width: 340px;
+		margin: auto;
+	}
+}
+
+@media ( min-width : 480px) {
+	img#foto {
+		float: right;
+		margin-top: 13px;
+	}
+}
+
+@media ( max-width : 480px) {
+	img#foto {
+		margin: auto;
+	}
+}
+
+button#retornar {
+	margin-top: 13px;
+}
+
+a:link, a:visited {
+	color: blue;
+}
+
+/* Página home.jsp */
+ul.nav li {
+	vertical-align: text-top;
+}
+
+button span.icon-bar {
+	background: #000;
+}
+
+/* Menu vertical */
+
+/* make sidebar nav vertical 
+
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+*/
+
+/* Conatainer do formulário de cadastro e alteração de bandas */
+@media ( max-width : 500px) {
+	div.formulario1 {
+		margin: 20px auto;
+		padding-top: 10px;
+		border: 1px solid;
+		background: #F7F7F7;
+	}
+}
+
+@media ( min-width : 1080px) {
+	div.formulario1 {
+		margin: -50px auto;
+		padding-top: 15px;
+		border: 1px solid;
+		background: #F7F7F7;
+		width: 500px;
+	}
+}
+
+/* Conatainer do formulário de pesquisa e remoção de bandas */
+@media ( max-width : 500px) {
+	div.formulario2 {
+		margin: 20px auto;
+		padding-top: 10px;
+		border: 1px solid;
+		background: #F7F7F7;
+	}
+}
+
+@media ( min-width : 1080px) {
+	div.formulario2 {
+		margin: -10px auto;
+		padding-top: 15px;
+		border: 1px solid;
+		background: #F7F7F7;
+		width: 500px;
+	}
+}
+
+input#nome {
+	padding-top: 2px;
+}
+
+table#tabela {
+	width: 100%;
+}
+
+/* Página bandaAdicionada.jsp: informa que a banda foi adicionada c/ sucesso */
+strong#info {
+	margin-top: 50px;
+	color: #008000;
+}
+
+/* Página de login */
+body#corpo-login {
+	background: url("../imagens/pub.jpg") no-repeat fixed;
+	background-size: cover;
+}
+
+section#secao {
+	margin: 80px auto;
+}
+
+@media ( min-width : 480px) {
+	h2#subtitulo {
+		text-align: center;
+		font-family: candara;
+		color: #fff;
+		font-weight: bold;
+	}
+}
+
+@media ( max-width : 480px) {
+	h2#subtitulo {
+		text-align: center;
+		font-family: candara;
+		font-weight: bold;
+		color: #fff;
+	}
+}
+
+label#lblLogin {
+	color: #fff;
+}
+
+/* Página bandaEcontrada.jsp */
+h3#bandaEncontrada {
+	text-align: center;
+	margin-top: 0px;
+	color: blue;
+}
+
+/* Página bandaNaoEcontrada.jsp */
+h2#bandaNaoEncontrada {
+	text-align: center;
+	margin-top: -40px;
+	color: red;
+}
+
+div#nomeDaBanda {
+	text-align: center;
+}
+
+img#bandaNaoEncontrada {
+	margin: auto;
+}
