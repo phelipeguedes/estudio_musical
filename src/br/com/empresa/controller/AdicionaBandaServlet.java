@@ -18,7 +18,7 @@ public class AdicionaBandaServlet extends HttpServlet {
 
 	public AdicionaBandaServlet() {
 		super();
-	}
+	} 
 
 	/* O método service aceita todos os métodos HTTP, ou seja, tanto GET quanto POST */
 

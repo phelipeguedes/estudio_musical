@@ -184,3 +184,9 @@ div#nomeDaBanda {
 img#bandaNaoEncontrada {
 	margin: auto;
 }
+
+/* Página bandasCadastradas.jsp */
+
+table th, td{
+	text-align:center;
+}
