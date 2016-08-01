@@ -14,9 +14,9 @@
 	<br/>
 	<br/>
 
-	<table class="table table bordered table striped">
+	<table class="table table-bordered table-striped table-hover table-condensed">
 		<thead>
-			<tr>
+			<tr class="info">
 				<th>Nome</th>
 				<th>Gênero</th>
 				<th>Quantidade de Membros</th>

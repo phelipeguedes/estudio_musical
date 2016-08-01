@@ -33,7 +33,8 @@ public class PesquisaBandaServlet extends HttpServlet {
 
 				if (dao.getLista().get(i).getNome().equalsIgnoreCase(banda.getNome())) {
 					Banda bandaEncontrada = BandaDao.procuraPeloNome(banda.getNome());
-					request.setAttribute("bandaEncontrada", BandaDao.getProcura(banda.getNome()));
+					//request.setAttribute("bandaEncontrada", BandaDao.getProcura(banda.getNome()));
+					request.setAttribute("banda", bandaEncontrada);
 					request.getRequestDispatcher("bandaEncontrada.jsp").forward(request, response);
 
 					System.out.println(bandaEncontrada);

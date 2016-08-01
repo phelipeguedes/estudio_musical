@@ -80,7 +80,7 @@ public class BandaDao {
 	/* Método utilizado p/ pesquisar uma banda pelo nome */
 
 	public static Banda procuraPeloNome(String nomeDaBanda) throws SQLException {
-		Banda banda1 = new Banda();
+		Banda bandaProcurada = new Banda();
 		try {
 
 			PreparedStatement pst = connection.prepareStatement("SELECT * FROM bandas WHERE nome LIKE ?");
@@ -89,7 +89,6 @@ public class BandaDao {
 
 			if (rs.next()) {
 				Banda banda = new Banda();
-				// banda = new Banda();
 				banda.setId(rs.getInt("id"));
 				banda.setNome(rs.getString("nome"));
 				banda.setGenero(rs.getString("genero"));
@@ -97,7 +96,7 @@ public class BandaDao {
 				banda.setTelefone(rs.getString("telefone"));
 				banda.setEmail(rs.getString("email"));
 
-				banda1 = banda;
+				bandaProcurada = banda;
 			} else {
 				System.out.println("Banda não cadastrada");
 			}
@@ -109,11 +108,7 @@ public class BandaDao {
 			e.printStackTrace();
 		}
 
-		return banda1;
-	}
-
-	public static Banda getProcura(String nomeDaBanda) throws SQLException {
-		return procuraPeloNome(nomeDaBanda);
+		return bandaProcurada;
 	}
 
 	/* Atualiza os registros da banda */

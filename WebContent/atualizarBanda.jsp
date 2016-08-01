@@ -2,9 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>Atualizar Banda</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8" />
+	<title>Atualizar Banda</title>
+	<script type="text/javascript" src="jquery/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="jquery/funcoes.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<jsp:include page="cabecalho.jsp"></jsp:include>
@@ -15,7 +17,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="nome">Nome</label>
 					<div class="col-sm-9">
-						<input type="text" class="form-control" name="nome" id="nome" placeholder="informe o nome da banda" required />
+						<input type="text" class="form-control" name="nome" id="nomeDaBanda" placeholder="informe o nome da banda" required />
 					</div>
 				</div>
 
@@ -29,14 +31,14 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="qtdMembros">Qtd Membros</label>
 					<div class="col-sm-9">
-						<input type="number" class="form-control" name="qtdMembros" id="qtdMembros" min="1" placeholder="quantidade de membros" />
+						<input type="number" class="form-control" name="qtdMembros" id="qtdMembros" min="1" placeholder="quantidade de membros" required />
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="login">Telefone</label>
 					<div class="col-sm-9">
-						<input type="tel" class="form-control" name="telefone" id="telefone" placeholder="insira um nº de telefone" required />
+						<input type="tel" class="form-control" name="telefone" id="telefone" placeholder="insira um nº de telefone" maxlength="14" required />
 					</div>
 				</div>
 

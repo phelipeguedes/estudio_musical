@@ -25,25 +25,23 @@
 	<br/>
 
 	<table class="table">
-		<tr>
+		<tr class="info">
 			<th>Id</th>
 			<th>Banda</th>
 			<th>Gênero</th>
 			<th>Quantidade de Membros</th>
-			<th>Login</th>
+			<th>Telefone</th>
+			<th>Email</th>
 		</tr>
-
-		<c:forEach var="banda" items="${bandaPesquisada}">
-
-			<tr>
-				<td>${modelo.id}</td>
-				<td>${modelo.nome}</td>
-				<td>${banda.genero}</td>
-				<td>${banda.qtdMembros}</td>
-				<td>${banda.nome}</td>
-			</tr>
-
-		</c:forEach>
+	
+		<tr>
+			<td>${banda.id}</td>
+			<td>${banda.nome}</td>
+			<td>${banda.genero}</td>
+			<td>${banda.qtdMembros}</td>
+			<td>${banda.telefone}</td>				
+			<td>${banda.email}</td>
+		</tr>
 	</table>
 
 

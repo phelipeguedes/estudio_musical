@@ -12,15 +12,16 @@ div.jumbotron {
 	color: #fff;
 }
 
+/* Se a tela é igual ou maior do que 500 pixels, o subtítulo tem essas configurações */
+
 @media ( min-width : 500px) {
 	div#subtitulo h3 {
-		text-align: center; //
-		background: #64b74d; //
-		color: #fff;
-		width: 340px;
+		text-align: center; 
 		margin: auto;
 	}
 }
+
+/* Se a tela é igual ou maior do que 480 pixels, a imagem no canto direito tem essas configurações */
 
 @media ( min-width : 480px) {
 	img#foto {
@@ -28,6 +29,8 @@ div.jumbotron {
 		margin-top: 13px;
 	}
 }
+
+/* Se a tela é igual ou menor do que 480 pixels, a imagem no canto direito tem essas configurações */
 
 @media ( max-width : 480px) {
 	img#foto {

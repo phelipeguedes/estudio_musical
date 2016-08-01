@@ -5,6 +5,10 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Deletar Banda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="jquery/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="jquery/funcoes.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -15,7 +19,7 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2">Banda</label>
 				<div class="col-sm-9">
-					<input type="text" class="form-control" name="nomeDaBanda" id="nome" placeholder="informe o nome da banda" required />
+					<input type="text" class="form-control" name="nomeDaBanda" id="nomeDaBanda" placeholder="informe o nome da banda" required />
 				</div>					
 			</div>
 				
